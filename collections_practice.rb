@@ -45,9 +45,11 @@ end
 
 def find_a(array)
   a_array = []
-  array.each_with_index do |word, i|
-     if word.start_with?("a") == true
+  i = 0
+  array.each do |word|
+     if word.start_with?("a")
        a_array[i] = word
+       i += 1
      end
   end
   a_array
