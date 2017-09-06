@@ -44,5 +44,10 @@ def kesha_maker(array)
 end
 
 def fins_a(array)
-  array.start_with?("a")
+  a_array = []
+  array.each_with_index do |word, i|
+     if word.start_with?("a")
+       a_array[i] = word
+     end
+  end
 end
