@@ -50,4 +50,5 @@ def fins_a(array)
        a_array[i] = word
      end
   end
+  a_array
 end
